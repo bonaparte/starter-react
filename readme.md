@@ -1,4 +1,4 @@
-#react-starter-bonaparte
+#bonaparte-starter-react
 
 ### Setup
 ```sh
