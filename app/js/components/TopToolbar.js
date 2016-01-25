@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Menubar = () => {
+const TopToolbar = () => {
 	return (
 		<aside>
 			<div className="header">Bonaparte Starter React</div>
@@ -8,4 +8,4 @@ const Menubar = () => {
 	);
 };
 
-export default Menubar;
+export default TopToolbar;

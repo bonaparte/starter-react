@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Sidebar = () => {
+const LeftToolbar = () => {
 	return (
 		<aside>
 			<div className="buttons">
@@ -27,4 +27,4 @@ const Sidebar = () => {
 	);
 };
 
-export default Sidebar;
+export default LeftToolbar;
