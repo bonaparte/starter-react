@@ -7,7 +7,7 @@
     "start": "webpack --watch --colors --progress"
   },
   "keywords": [],
-  "author": { 
+  "author": {
     "name" : "Dov Friedman",
     "email" : "dov@dovfriedman.com"
   },
