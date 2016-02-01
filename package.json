@@ -1,5 +1,5 @@
 {
-  "name": "react-starter-bonaparte",
+  "name": "bonaparte-starter-react",
   "version": "0.0.1",
   "description": "A React starter Bonaparte app",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "build": "webpack -p"
   },
   "keywords": [],
-  "author": { 
+  "author": {
     "name" : "Dov Friedman",
     "email" : "dov@dovfriedman.com"
   },
