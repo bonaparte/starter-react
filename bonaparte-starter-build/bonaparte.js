@@ -67,17 +67,17 @@
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
-	
-
+	// Components
 	__webpack_require__(55);
 	__webpack_require__(72);
-	__webpack_require__(86);
-	__webpack_require__(101);
-	__webpack_require__(115);
-	__webpack_require__(152);
-	__webpack_require__(164);
+	__webpack_require__(85);
+	__webpack_require__(99);
+	__webpack_require__(112);
+	__webpack_require__(148);
+	__webpack_require__(160);
 
-	__webpack_require__(178);
+	// Themes
+	__webpack_require__(173);
 
 
 /***/ },
@@ -136,7 +136,7 @@
 /* 53 */,
 /* 54 */,
 /* 55 */
-[197, 56, 70],
+[191, 56, 70],
 /* 56 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -239,9 +239,9 @@
 
 /***/ },
 /* 58 */
-[198, 59, 65, 66, 67],
+[192, 59, 65, 66, 67],
 /* 59 */
-[199, 60, 62],
+[193, 60, 62],
 /* 60 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -523,11 +523,11 @@
 
 /***/ },
 /* 62 */
-[200, 60, 59, 63, 64],
+[194, 60, 59, 63, 64],
 /* 63 */
-[201, 58],
+[195, 58],
 /* 64 */
-[202, 60],
+[196, 60],
 /* 65 */
 /***/ function(module, exports) {
 
@@ -1136,7 +1136,7 @@
 	// https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent#Polyfill
 
 	try {
-	  new CustomEvent("test");
+	  new window.CustomEvent("test");
 	} catch(e) {
 	 var CustomEvent = function(event, params) {
 	      var evt;
@@ -1154,6 +1154,7 @@
 	  CustomEvent.prototype = window.Event.prototype;
 	  window.CustomEvent = CustomEvent; // expose definition to window
 	}
+
 
 /***/ },
 /* 68 */
@@ -2218,7 +2219,7 @@
 /***/ },
 /* 71 */,
 /* 72 */
-[197, 73, 84],
+[191, 73, 84],
 /* 73 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -2362,17 +2363,17 @@
 
 /***/ },
 /* 75 */
-[198, 76, 81, 82, 83],
+[192, 76, 81, 82, 83],
 /* 76 */
-[199, 77, 78],
+[193, 77, 78],
 /* 77 */
 60,
 /* 78 */
-[200, 77, 76, 79, 80],
+[194, 77, 76, 79, 80],
 /* 79 */
-[201, 75],
+[195, 75],
 /* 80 */
-[202, 77],
+[196, 77],
 /* 81 */
 65,
 /* 82 */
@@ -2381,66 +2382,63 @@
 67,
 /* 84 */
 70,
-/* 85 */,
+/* 85 */
+[191, 86, 98],
 /* 86 */
-[197, 87, 99],
+[197, 87],
 /* 87 */
-[203, 88],
+[198, 88, 97],
 /* 88 */
-[204, 89, 98],
+[192, 89, 94, 95, 96],
 /* 89 */
-[198, 90, 95, 96, 97],
+[193, 90, 91],
 /* 90 */
-[199, 91, 92],
+60,
 /* 91 */
-60,
+[194, 90, 89, 92, 93],
 /* 92 */
-[200, 91, 90, 93, 94],
+[195, 88],
 /* 93 */
-[201, 89],
+[196, 90],
 /* 94 */
-[202, 91],
+65,
 /* 95 */
-65,
+66,
 /* 96 */
-66,
+67,
 /* 97 */
-67,
-/* 98 */
 68,
+/* 98 */
+70,
 /* 99 */
-70,
-/* 100 */,
+[191, 100, 111],
+/* 100 */
+[199, 101],
 /* 101 */
-[197, 102, 113],
+[200, 102],
 /* 102 */
-[205, 103],
+[192, 103, 108, 109, 110],
 /* 103 */
-[206, 104],
+[193, 104, 105],
 /* 104 */
-[198, 105, 110, 111, 112],
-/* 105 */
-[199, 106, 107],
-/* 106 */
 60,
+/* 105 */
+[194, 104, 103, 106, 107],
+/* 106 */
+[195, 102],
 /* 107 */
-[200, 106, 105, 108, 109],
+[196, 104],
 /* 108 */
-[201, 104],
-/* 109 */
-[202, 106],
-/* 110 */
 65,
-/* 111 */
+/* 109 */
 66,
-/* 112 */
+/* 110 */
 67,
-/* 113 */
+/* 111 */
 70,
-/* 114 */,
-/* 115 */
-[197, 116, 150],
-/* 116 */
+/* 112 */
+[191, 113, 147],
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -2450,20 +2448,20 @@
 	 * require("bonaparte").mixin.create()
 	 */
 
-	module.exports = __webpack_require__(117);
+	module.exports = __webpack_require__(114);
 
 
 /***/ },
-/* 117 */
+/* 114 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var bp = __webpack_require__(118);
+	var bp = __webpack_require__(115);
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
 
 	module.exports = bp.tag.create("toolbar", [
-	  __webpack_require__(127),
+	  __webpack_require__(124),
 	  toolbar
 	]);
 
@@ -2488,7 +2486,7 @@
 	    }
 
 	    for(var i = 0; i< buttons.length; i++){
-	      __webpack_require__(138).initialize(buttons[i]);
+	      __webpack_require__(135).initialize(buttons[i]);
 	    }
 
 
@@ -2501,80 +2499,79 @@
 
 
 /***/ },
+/* 115 */
+[192, 116, 121, 122, 123],
+/* 116 */
+[193, 117, 118],
+/* 117 */
+60,
 /* 118 */
-[198, 119, 124, 125, 126],
+[194, 117, 116, 119, 120],
 /* 119 */
-[199, 120, 121],
+[195, 115],
 /* 120 */
-60,
+[196, 117],
 /* 121 */
-[200, 120, 119, 122, 123],
+65,
 /* 122 */
-[201, 118],
+66,
 /* 123 */
-[202, 120],
+67,
 /* 124 */
-65,
+[199, 125],
 /* 125 */
-66,
+[200, 126],
 /* 126 */
-67,
+[192, 127, 132, 133, 134],
 /* 127 */
-[205, 128],
+[193, 128, 129],
 /* 128 */
-[206, 129],
+60,
 /* 129 */
-[198, 130, 135, 136, 137],
+[194, 128, 127, 130, 131],
 /* 130 */
-[199, 131, 132],
+[195, 126],
 /* 131 */
-60,
+[196, 128],
 /* 132 */
-[200, 131, 130, 133, 134],
+65,
 /* 133 */
-[201, 129],
+66,
 /* 134 */
-[202, 131],
+67,
 /* 135 */
-65,
+[197, 136],
 /* 136 */
-66,
+[198, 137, 146],
 /* 137 */
-67,
+[192, 138, 143, 144, 145],
 /* 138 */
-[203, 139],
+[193, 139, 140],
 /* 139 */
-[204, 140, 149],
-/* 140 */
-[198, 141, 146, 147, 148],
-/* 141 */
-[199, 142, 143],
-/* 142 */
 60,
+/* 140 */
+[194, 139, 138, 141, 142],
+/* 141 */
+[195, 137],
+/* 142 */
+[196, 139],
 /* 143 */
-[200, 142, 141, 144, 145],
-/* 144 */
-[201, 140],
-/* 145 */
-[202, 142],
-/* 146 */
 65,
-/* 147 */
+/* 144 */
 66,
-/* 148 */
+/* 145 */
 67,
-/* 149 */
+/* 146 */
 68,
-/* 150 */
+/* 147 */
 70,
-/* 151 */,
-/* 152 */
+/* 148 */
 /***/ function(module, exports, __webpack_require__) {
 
-	__webpack_require__(153).register();
+	__webpack_require__(149).register();
 
 /***/ },
-/* 153 */
+/* 149 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -2584,13 +2581,13 @@
 	 * require("bonaparte").mixin.create()
 	 */
 
-	module.exports = __webpack_require__(154);
+	module.exports = __webpack_require__(150);
 
 /***/ },
-/* 154 */
+/* 150 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var bp = __webpack_require__(155);
+	var bp = __webpack_require__(151);
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
@@ -2792,27 +2789,27 @@
 	///////////////////////////////////////////////////////////////////////////////
 
 /***/ },
-/* 155 */
-[198, 156, 161, 162, 163],
-/* 156 */
-[199, 157, 158],
-/* 157 */
+/* 151 */
+[192, 152, 157, 158, 159],
+/* 152 */
+[193, 153, 154],
+/* 153 */
 60,
-/* 158 */
-[200, 157, 156, 159, 160],
-/* 159 */
-[201, 155],
-/* 160 */
-[202, 157],
-/* 161 */
+/* 154 */
+[194, 153, 152, 155, 156],
+/* 155 */
+[195, 151],
+/* 156 */
+[196, 153],
+/* 157 */
 65,
-/* 162 */
+/* 158 */
 66,
-/* 163 */
+/* 159 */
 67,
-/* 164 */
-[197, 165, 176],
-/* 165 */
+/* 160 */
+[191, 161, 172],
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
 	/*
@@ -2822,13 +2819,13 @@
 	 * require("bonaparte").mixin.create()
 	 */
 
-	module.exports = __webpack_require__(166);
+	module.exports = __webpack_require__(162);
 
 /***/ },
-/* 166 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
-	var bp = __webpack_require__(167);
+	var bp = __webpack_require__(163);
 
 	///////////////////////////////////////////////////////////////////////////////
 	// Public
@@ -2921,33 +2918,32 @@
 	///////////////////////////////////////////////////////////////////////////////
 
 /***/ },
-/* 167 */
-[198, 168, 173, 174, 175],
-/* 168 */
-[199, 169, 170],
-/* 169 */
+/* 163 */
+[192, 164, 169, 170, 171],
+/* 164 */
+[193, 165, 166],
+/* 165 */
 60,
-/* 170 */
-[200, 169, 168, 171, 172],
-/* 171 */
-[201, 167],
-/* 172 */
-[202, 169],
-/* 173 */
+/* 166 */
+[194, 165, 164, 167, 168],
+/* 167 */
+[195, 163],
+/* 168 */
+[196, 165],
+/* 169 */
 65,
-/* 174 */
+/* 170 */
 66,
-/* 175 */
+/* 171 */
 67,
-/* 176 */
+/* 172 */
 70,
-/* 177 */,
-/* 178 */
+/* 173 */
 /***/ function(module, exports, __webpack_require__) {
 
 	// Bonaparte //////////////////////////////////////////////////////////////////
 
-	__webpack_require__(179);
+	__webpack_require__(174);
 
 	// SUI ////////////////////////////////////////////////////////////////////////
 
@@ -2960,28 +2956,28 @@
 
 	// require("./src/less/button.less"); // require("./SUI/definitions/elements/button.less");
 	// require("./src/less/container.less"); // require("./SUI/definitions/elements/container.less");
-	__webpack_require__(181);
+	__webpack_require__(175);
 	// require("./SUI/definitions/elements/header.less");
 	// require("./src/less/header.less");
 	// require("./SUI/definitions/elements/flag.less");
-	__webpack_require__(182);
+	__webpack_require__(176);
 	// require("./SUI/definitions/elements/image.less");
-	__webpack_require__(191);
-	__webpack_require__(192);
+	__webpack_require__(185);
+	__webpack_require__(186);
 	// require("./SUI/definitions/elements/list.less");
 	// require("./SUI/definitions/elements/loader.less");
 	// require("./SUI/definitions/elements/rail.less");
 	// require("./SUI/definitions/elements/reveal.less");
-	__webpack_require__(193);
+	__webpack_require__(187);
 	// require("./SUI/definitions/elements/step.less");
 
 	/* Collections */
 	// require("./SUI/definitions/collections/breadcrumb.less");
-	__webpack_require__(194);
-	__webpack_require__(195);
+	__webpack_require__(188);
+	__webpack_require__(189);
 	// require("./SUI/definitions/collections/menu.less");
 	// require("./SUI/definitions/collections/message.less");
-	__webpack_require__(196);
+	__webpack_require__(190);
 
 
 	/* Views */
@@ -3012,41 +3008,40 @@
 
 
 /***/ },
-/* 179 */
+/* 174 */
 70,
+/* 175 */
+70,
+/* 176 */
+70,
+/* 177 */,
+/* 178 */,
+/* 179 */,
 /* 180 */,
-/* 181 */
-70,
-/* 182 */
-70,
+/* 181 */,
+/* 182 */,
 /* 183 */,
 /* 184 */,
-/* 185 */,
-/* 186 */,
-/* 187 */,
-/* 188 */,
-/* 189 */,
-/* 190 */,
+/* 185 */
+70,
+/* 186 */
+70,
+/* 187 */
+70,
+/* 188 */
+70,
+/* 189 */
+70,
+/* 190 */
+70,
 /* 191 */
-70,
-/* 192 */
-70,
-/* 193 */
-70,
-/* 194 */
-70,
-/* 195 */
-70,
-/* 196 */
-70,
-/* 197 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	__webpack_require__(__webpack_module_template_argument_0__).register();
 	__webpack_require__(__webpack_module_template_argument_1__);
 
 /***/ },
-/* 198 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__) {
 
 	///////////////////////////////////////////////////////////////////////////////
@@ -3076,7 +3071,7 @@
 
 
 /***/ },
-/* 199 */
+/* 193 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	var objct = __webpack_require__(__webpack_module_template_argument_0__);
@@ -3247,7 +3242,7 @@
 	///////////////////////////////////////////////////////////////////////////////
 
 /***/ },
-/* 200 */
+/* 194 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__, __webpack_module_template_argument_2__, __webpack_module_template_argument_3__) {
 
 	var objct = __webpack_require__(__webpack_module_template_argument_0__);
@@ -3393,7 +3388,7 @@
 
 
 /***/ },
-/* 201 */
+/* 195 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	var bp = __webpack_require__(__webpack_module_template_argument_0__);
@@ -3424,7 +3419,7 @@
 	}
 
 /***/ },
-/* 202 */
+/* 196 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	var objct = __webpack_require__(__webpack_module_template_argument_0__);
@@ -3466,7 +3461,7 @@
 	}
 
 /***/ },
-/* 203 */
+/* 197 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	/*
@@ -3479,7 +3474,7 @@
 	module.exports = __webpack_require__(__webpack_module_template_argument_0__);
 
 /***/ },
-/* 204 */
+/* 198 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__, __webpack_module_template_argument_1__) {
 
 	var bp = __webpack_require__(__webpack_module_template_argument_0__);
@@ -3759,7 +3754,7 @@
 	 ///////////////////////////////////////////////////////////////////////////////
 
 /***/ },
-/* 205 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	/*
@@ -3772,7 +3767,7 @@
 	module.exports = __webpack_require__(__webpack_module_template_argument_0__);
 
 /***/ },
-/* 206 */
+/* 200 */
 /***/ function(module, exports, __webpack_require__, __webpack_module_template_argument_0__) {
 
 	///////////////////////////////////////////////////////////////////////////////
