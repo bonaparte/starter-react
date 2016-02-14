@@ -7,7 +7,17 @@
     "start": "webpack-dev-server",
     "build": "webpack -p"
   },
-  "keywords": [],
+  "keywords": [
+    "bonaparte",
+		"bonaparte-starter",
+		"ux",
+		"ui",
+		"library",
+		"framework",
+		"webcomponents",
+		"component",
+		"front-end"
+	],
   "author": {
     "name" : "Dov Friedman",
     "email" : "dov@dovfriedman.com"
