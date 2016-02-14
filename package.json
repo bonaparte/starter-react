@@ -2,7 +2,7 @@
   "name": "bonaparte-starter-react",
   "version": "0.0.1",
   "description": "A Bonaparte React starter app",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "start": "webpack --watch --colors --progress"
   },
@@ -32,5 +32,9 @@
   "dependencies": {
     "react": "^0.14.2",
     "react-dom": "^0.14.2"
-  }
+  },
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/bonaparte/starter-react.git"
+	}
 }
