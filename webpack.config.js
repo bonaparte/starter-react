@@ -1,23 +1,14 @@
+var path = require("path");
+
 module.exports = {
-	entry: './app/js/main.js',
+	entry: './src/main.js',
 	output: {
-		path: './app',
+		path: 'dist',
 		filename: 'bundle.js',
 		publicPath: '/'    
 	},
-	devServer: {
-        colors:             true,
-        contentBase:        './app',
-        historyApiFallback: true,
-        inline:             true,
-        progress:           true
-    },
 	module: {
 		loaders: [{
-			test: /\.scss$/,
-			loaders: ["style", "css", "sass"],
-		},
-		{
 			test: /\.jsx?$/,
 			loader: 'babel',
 			exclude: (/node_modules/),
